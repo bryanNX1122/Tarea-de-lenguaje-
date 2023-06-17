@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <script src="codigo.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Cronómetro
+        </h1>
+        <p><h3>
+            Un cronómetro es un reloj de precisión que se utiliza para medir tiempos mediante la puesta en marcha y parada del mecanismo de control que generalmente son botones que ponen en marcha el inicio del tiempo o paran la medición de éste en el momento que se acciona. Con el avance de la tecnología, los cronómetros han evolucionado hacia formatos digitales y se pueden encontrar en dispositivos portátiles, como teléfonos inteligentes, relojes digitales y cronómetros de pulsera.
+        </h3></p>
+    </div>
+    <main>
+        <div class="circle">
+            <div id="stopwatch" class="stopwatch">00:00</div>
+            <div class="buttons">
+                <div class="stop" onclick="stop()"></div>
+                <div id="play-pause" class="paused" onclick="playPause()"></div>
+            </div>
+        </div>
+        <div id="seconds-sphere" class="seconds-sphere"></div>
+    </main>
+    <div class="bottom-button">
+        <a href="../Principal.html" class="button">Regresar</a>
+    </div>
+</body>
+</html>
